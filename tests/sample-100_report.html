@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phishing Analysis Report</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 20px; background: #1a1a2e; color: #e0e0e0; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; }
+  h2 { color: #00d4ff; margin-top: 30px; }
+  .score-box { background: #ffc107; color: white; padding: 20px; border-radius: 10px;
+               text-align: center; font-size: 24px; margin: 20px 0; }
+  .score-num { font-size: 48px; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #333; }
+  th { background: #16213e; color: #00d4ff; }
+  tr:hover { background: #16213e; }
+  .flag { color: #ff6b6b; font-weight: bold; }
+  .ok { color: #51cf66; }
+  .warn { color: #ffd43b; }
+  .section { background: #16213e; padding: 15px; border-radius: 8px; margin: 15px 0; }
+  .meta { color: #888; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Phishing Analysis Report</h1>
+<p class="meta">Generated: 2026-03-16 14:55:05 | File: sample-100.eml</p>
+
+<div class="score-box">
+  <div class="score-num">38/100</div>
+  <div>CAUTION — SOME RED FLAGS</div>
+</div>
+<h2>Score Breakdown</h2><div class="section"><table><tr><th>Factor</th><th>Points</th></tr><tr><td>Header mismatches</td><td>+20</td></tr><tr><td>Suspicious HTML (1 issues)</td><td>+8</td></tr><tr><td>ALL CAPS abuse</td><td>+6</td></tr><tr><td>Excessive punctuation</td><td>+4</td></tr></table></div><h2>Email Headers</h2><div class="section"><table><tr><td><strong>From</strong></td><td>Zonnepanelen installateur &lt;zonnepaneel@appjj.serenitepure.fr&gt;</td></tr><tr><td><strong>To</strong></td><td>phishing@pot</td></tr><tr><td><strong>Subject</strong></td><td>🔋 Zonnepanelen voor een goede prijs </td></tr><tr><td><strong>Date</strong></td><td>Thu, 03 Nov 2022 04:56:15 +0000</td></tr><tr><td><strong>Return Path</strong></td><td>return@dturm.de</td></tr><tr><td><strong>Reply To</strong></td><td>Zonnepanelen installateur &lt;news@aichakandisha.com&gt;</td></tr><tr><td><strong>Message Id</strong></td><td>&lt;0.0.0.0.1D8EF409A5C12CE.37AA@dturm.de&gt;</td></tr></table><table><tr><th>Auth</th><th>Status</th></tr><tr><td>SPF</td><td class="warn">NOT FOUND</td></tr><tr><td>DKIM</td><td class="warn">NOT FOUND</td></tr><tr><td>DMARC</td><td class="warn">NOT FOUND</td></tr></table><br><div class="flag">[!] FROM/RETURN-PATH MISMATCH: appjj.serenitepure.fr vs dturm.de</div><div class="flag">[!] FROM/REPLY-TO MISMATCH: appjj.serenitepure.fr vs aichakandisha.com</div></div><h2>URL Analysis (3 URLs)</h2><div class="section"><p><strong>http://go.nltrck.com/?c=495&amp;amp;source=consumentenbond&amp;amp;s1=&amp;amp;lp=1190</strong><br>Domain: go.nltrck.com</p><p><strong>https://i.imgur.com/sOPmaS3.png</strong><br>Domain: i.imgur.com</p><p><strong>https://i.imgur.com/Hr5TM3Y.png</strong><br>Domain: i.imgur.com</p></div><h2>Body Content Analysis</h2><div class="section"><p class="ok">No social engineering patterns detected</p><div class="flag">[!] Excessive exclamation marks (51) — pressure tactic</div><div class="flag">[!] Multiple ALL CAPS words: START, INSERT, FOOTER, VARIANTS, COMMON</div></div><h2>HTML Analysis</h2><div class="section"><p>6 hidden elements (display:none)</p><p>19 zero/1px sized elements (tracking pixels?)</p><div class="flag">[!] Multiple hidden elements — possible content obfuscation</div></div><h2>Attachments (0)</h2><div class="section"><p class="ok">No attachments</p></div><h2>Domain WHOIS</h2><div class="section"><p><strong>nltrck.com</strong> — registered 2020-09-29 (1994d ago)</p><p><strong>imgur.com</strong> — registered 2009-01-09 (6274d ago)</p></div><h2>VirusTotal</h2><div class="section"><table><tr><th>Target</th><th>Malicious</th><th>Suspicious</th><th>Harmless</th></tr><tr><td>http://go.nltrck.com/?c=495&amp;amp;source=consumentenbond&amp;amp;s</td><td class="">0</td><td>0</td><td>64</td></tr><tr><td>https://i.imgur.com/sOPmaS3.png</td><td class="">0</td><td>0</td><td>64</td></tr><tr><td>https://i.imgur.com/Hr5TM3Y.png</td><td class="">0</td><td>0</td><td>64</td></tr></table></div><h2>AbuseIPDB</h2><div class="section"><p>No IP to check</p></div></div></body></html>

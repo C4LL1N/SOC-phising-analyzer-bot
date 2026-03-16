@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phishing Analysis Report</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 20px; background: #1a1a2e; color: #e0e0e0; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; }
+  h2 { color: #00d4ff; margin-top: 30px; }
+  .score-box { background: #fd7e14; color: white; padding: 20px; border-radius: 10px;
+               text-align: center; font-size: 24px; margin: 20px 0; }
+  .score-num { font-size: 48px; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #333; }
+  th { background: #16213e; color: #00d4ff; }
+  tr:hover { background: #16213e; }
+  .flag { color: #ff6b6b; font-weight: bold; }
+  .ok { color: #51cf66; }
+  .warn { color: #ffd43b; }
+  .section { background: #16213e; padding: 15px; border-radius: 8px; margin: 15px 0; }
+  .meta { color: #888; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Phishing Analysis Report</h1>
+<p class="meta">Generated: 2026-03-16 14:55:01 | File: sample-1.eml</p>
+
+<div class="score-box">
+  <div class="score-num">52/100</div>
+  <div>SUSPICIOUS — LIKELY PHISHING</div>
+</div>
+<h2>Score Breakdown</h2><div class="section"><table><tr><th>Factor</th><th>Points</th></tr><tr><td>VT: 1 engine(s) flagged https://fonts.gstatic.com</td><td>+24</td></tr><tr><td>Suspicious URLs (2 flags)</td><td>+12</td></tr><tr><td>Header mismatches</td><td>+10</td></tr><tr><td>ALL CAPS abuse</td><td>+6</td></tr></table></div><h2>Email Headers</h2><div class="section"><table><tr><td><strong>From</strong></td><td>BANCO DO BRADESCO LIVELO &lt;banco.bradesco@atendimento.com.br&gt;</td></tr><tr><td><strong>To</strong></td><td>phishing@pot</td></tr><tr><td><strong>Subject</strong></td><td>CLIENTE PRIME - BRADESCO LIVELO: Seu cartão tem 92.990 pontos LIVELO expirando hoje!</td></tr><tr><td><strong>Date</strong></td><td>Tue, 19 Sep 2023 18:35:49 +0000</td></tr><tr><td><strong>Return Path</strong></td><td>root@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06</td></tr><tr><td><strong>Reply To</strong></td><td>N/A</td></tr><tr><td><strong>Message Id</strong></td><td>&lt;20230919183549.39DEA3F725@ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06&gt;</td></tr></table><table><tr><th>Auth</th><th>Status</th></tr><tr><td>SPF</td><td class="warn">NOT FOUND</td></tr><tr><td>DKIM</td><td class="warn">NOT FOUND</td></tr><tr><td>DMARC</td><td class="warn">NOT FOUND</td></tr></table><br><div class="flag">[!] FROM/RETURN-PATH MISMATCH: atendimento.com.br vs ubuntu-s-1vcpu-1gb-35gb-intel-sfo3-06</div></div><h2>URL Analysis (3 URLs)</h2><div class="section"><p><strong>https://fonts.gstatic.com</strong><br>Domain: fonts.gstatic.com</p><p><strong>https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&amp;amp;display=sw</strong><br>Domain: fonts.googleapis.com</p><div class="flag">[!] Possible brand impersonation: google</div><div class="flag">[!] URL contains @ — browser may ignore text before it</div><p><strong>https://blog1seguimentmydomaine2bra.me/</strong><br>Domain: blog1seguimentmydomaine2bra.me</p></div><h2>Body Content Analysis</h2><div class="section"><p class="ok">No social engineering patterns detected</p><div class="flag">[!] Multiple ALL CAPS words: ACUMULADOS, EXPIRAM, PONTOS, HOJE</div></div><h2>HTML Analysis</h2><div class="section"><p>8 zero/1px sized elements (tracking pixels?)</p></div><h2>Attachments (0)</h2><div class="section"><p class="ok">No attachments</p></div><h2>Domain WHOIS</h2><div class="section"><p><strong>gstatic.com</strong> — registered 2008-02-11 (6608d ago)</p><p><strong>googleapis.com</strong> — registered 2005-01-25 (7720d ago)</p><p><strong>blog1seguimentmydomaine2bra.me</strong></p></div><h2>VirusTotal</h2><div class="section"><table><tr><th>Target</th><th>Malicious</th><th>Suspicious</th><th>Harmless</th></tr><tr><td>https://fonts.gstatic.com</td><td class="flag">1</td><td>0</td><td>63</td></tr><tr><td>https://fonts.googleapis.com/css2?family=Signika:wght@300;50</td><td class="">0</td><td>0</td><td>63</td></tr><tr><td>https://blog1seguimentmydomaine2bra.me/</td><td class="">0</td><td>0</td><td>60</td></tr></table></div><h2>AbuseIPDB</h2><div class="section"><p>No IP to check</p></div></div></body></html>

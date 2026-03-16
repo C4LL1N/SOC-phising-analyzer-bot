@@ -1,0 +1,145 @@
+{
+  "report_date": "2026-03-16T14:55:05.711596",
+  "source_file": "/home/c4ll1n/Desktop/example-of-eml/sample-100.eml",
+  "risk_score": {
+    "score": 38,
+    "verdict": "CAUTION \u2014 SOME RED FLAGS",
+    "breakdown": [
+      [
+        "Header mismatches",
+        20
+      ],
+      [
+        "Excessive punctuation",
+        4
+      ],
+      [
+        "ALL CAPS abuse",
+        6
+      ],
+      [
+        "Suspicious HTML (1 issues)",
+        8
+      ]
+    ]
+  },
+  "header_analysis": {
+    "from": "Zonnepanelen installateur <zonnepaneel@appjj.serenitepure.fr>",
+    "return_path": "return@dturm.de",
+    "reply_to": "Zonnepanelen installateur <news@aichakandisha.com>",
+    "to": "phishing@pot",
+    "subject": "\ud83d\udd0b Zonnepanelen voor een goede prijs ",
+    "date": "Thu, 03 Nov 2022 04:56:15 +0000",
+    "message_id": "<0.0.0.0.1D8EF409A5C12CE.37AA@dturm.de>",
+    "received_chain": [
+      {
+        "hop": 1,
+        "header": "from dturm.de (57.128.69.202) by VI1EUR05FT048.mail.protection.outlook.com (10.233.243.188) with Microsoft SMTP Server id 15.20.5791.20 via Frontend Transport; Thu, 3 Nov 2022 04:56:15 +0000"
+      },
+      {
+        "hop": 2,
+        "header": "from VI1EUR05FT048.eop-eur05.prod.protection.outlook.com (2603:10a6:20b:100::4) by AM7PR02CA0005.outlook.office365.com (2603:10a6:20b:100::15) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5791.22 via Frontend Transport; Thu, 3 Nov 2022 04:56:15 +0000"
+      },
+      {
+        "hop": 3,
+        "header": "from AM7PR02CA0005.eurprd02.prod.outlook.com (2603:10a6:20b:100::15) by MN2PR19MB3966.namprd19.prod.outlook.com (2603:10b6:208:1e8::10) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5769.16; Thu, 3 Nov 2022 04:56:16 +0000"
+      },
+      {
+        "hop": 4,
+        "header": "from MN2PR19MB3966.namprd19.prod.outlook.com (::1) by MN0PR19MB6312.namprd19.prod.outlook.com with HTTPS; Thu, 3 Nov 2022 04:56:17 +0000"
+      }
+    ],
+    "auth": {
+      "spf": "NOT FOUND",
+      "dkim": "NOT FOUND",
+      "dmarc": "NOT FOUND"
+    },
+    "red_flags": [
+      "FROM/RETURN-PATH MISMATCH: appjj.serenitepure.fr vs dturm.de",
+      "FROM/REPLY-TO MISMATCH: appjj.serenitepure.fr vs aichakandisha.com"
+    ],
+    "originating_ip": null
+  },
+  "url_analysis": [
+    {
+      "url": "http://go.nltrck.com/?c=495&amp;source=consumentenbond&amp;s1=&amp;lp=1190",
+      "domain": "go.nltrck.com",
+      "scheme": "http",
+      "red_flags": []
+    },
+    {
+      "url": "https://i.imgur.com/sOPmaS3.png",
+      "domain": "i.imgur.com",
+      "scheme": "https",
+      "red_flags": []
+    },
+    {
+      "url": "https://i.imgur.com/Hr5TM3Y.png",
+      "domain": "i.imgur.com",
+      "scheme": "https",
+      "red_flags": []
+    }
+  ],
+  "body_analysis": {
+    "body_length": 3489,
+    "matches": [],
+    "red_flags": [
+      "Excessive exclamation marks (51) \u2014 pressure tactic",
+      "Multiple ALL CAPS words: START, INSERT, FOOTER, VARIANTS, COMMON"
+    ]
+  },
+  "html_analysis": {
+    "has_html": true,
+    "findings": [
+      "6 hidden elements (display:none)",
+      "19 zero/1px sized elements (tracking pixels?)"
+    ],
+    "red_flags": [
+      "Multiple hidden elements \u2014 possible content obfuscation"
+    ]
+  },
+  "attachment_analysis": [],
+  "whois_analysis": [
+    {
+      "domain": "nltrck.com",
+      "creation_date": "2020-09-29",
+      "age_days": 1994,
+      "registrar": "NameCheap, Inc.",
+      "red_flags": []
+    },
+    {
+      "domain": "imgur.com",
+      "creation_date": "2009-01-09",
+      "age_days": 6274,
+      "registrar": "Amazon Registrar, Inc.",
+      "red_flags": []
+    }
+  ],
+  "virustotal_results": [
+    {
+      "url": "http://go.nltrck.com/?c=495&amp;source=consumentenbond&amp;s1=&amp;lp=1190",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 64,
+      "undetected": 31,
+      "reputation": 0
+    },
+    {
+      "url": "https://i.imgur.com/sOPmaS3.png",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 64,
+      "undetected": 31,
+      "reputation": 0
+    },
+    {
+      "url": "https://i.imgur.com/Hr5TM3Y.png",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 64,
+      "undetected": 31,
+      "reputation": 0
+    }
+  ],
+  "abuseipdb_result": null
+}

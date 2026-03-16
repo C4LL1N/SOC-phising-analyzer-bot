@@ -1,0 +1,110 @@
+{
+  "report_date": "2026-03-16T14:55:07.087806",
+  "source_file": "/home/c4ll1n/Desktop/example-of-eml/sample-1000.eml",
+  "risk_score": {
+    "score": 50,
+    "verdict": "SUSPICIOUS \u2014 LIKELY PHISHING",
+    "breakdown": [
+      [
+        "VT: malicious attachment csWuYjyqO2IR.pdf",
+        50
+      ]
+    ]
+  },
+  "header_analysis": {
+    "from": "\"[BB] - Seu saldo foi liberado - C\u00f3digo: 11084339647130851921\" <prestonconstance587@gmail.com>",
+    "return_path": "prestonconstance587@gmail.com",
+    "reply_to": null,
+    "to": "phishing@pot",
+    "subject": "Libera\u00e7\u00e3o de IRPF - 6NwlyfzWcsNerv0",
+    "date": "Wed, 26 Jul 2023 17:59:01 +0000",
+    "message_id": "<fe5a59263be048e994229d8d1b31df82@gmail.com>",
+    "received_chain": [
+      {
+        "hop": 1,
+        "header": "from a3.domain ([20.97.213.223])        by smtp.gmail.com with ESMTPSA id q5-20020ac87345000000b004069782c943sm2329278qtp.40.2023.07.26.10.59.04        for <phishing@pot>        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);        Wed, 26 Jul 2023 10:59:04 -0700 (PDT)"
+      },
+      {
+        "hop": 2,
+        "header": "by mail-qt1-f178.google.com with SMTP id d75a77b69052e-403470df1d0so6241921cf.0        for <phishing@pot>; Wed, 26 Jul 2023 10:59:05 -0700 (PDT)"
+      },
+      {
+        "hop": 3,
+        "header": "from mail-qt1-f178.google.com (209.85.160.178) by MW2NAM04FT023.mail.protection.outlook.com (10.13.30.111) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6631.29 via Frontend Transport; Wed, 26 Jul 2023 17:59:05 +0000"
+      },
+      {
+        "hop": 4,
+        "header": "from MW2NAM04FT023.eop-NAM04.prod.protection.outlook.com (2603:10b6:303:dd:cafe::86) by MW4PR03CA0311.outlook.office365.com (2603:10b6:303:dd::16) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6631.29 via Frontend Transport; Wed, 26 Jul 2023 17:59:05 +0000"
+      },
+      {
+        "hop": 5,
+        "header": "from MW4PR03CA0311.namprd03.prod.outlook.com (2603:10b6:303:dd::16) by PH7PR19MB6592.namprd19.prod.outlook.com (2603:10b6:510:1b3::9) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6609.33; Wed, 26 Jul 2023 17:59:05 +0000"
+      },
+      {
+        "hop": 6,
+        "header": "from PH7PR19MB6592.namprd19.prod.outlook.com (2603:10b6:510:1b3::9) by MN0PR19MB6312.namprd19.prod.outlook.com with HTTPS; Wed, 26 Jul 2023 17:59:07 +0000"
+      }
+    ],
+    "auth": {
+      "spf": "PASS",
+      "dkim": "PASS",
+      "dmarc": "PASS"
+    },
+    "red_flags": [],
+    "originating_ip": "20.97.213.223"
+  },
+  "url_analysis": [],
+  "body_analysis": {
+    "body_length": 494,
+    "matches": [],
+    "red_flags": []
+  },
+  "html_analysis": {
+    "has_html": true,
+    "findings": [],
+    "red_flags": []
+  },
+  "attachment_analysis": [
+    {
+      "filename": "csWuYjyqO2IR.pdf",
+      "size": 97566,
+      "content_type": "application/pdf",
+      "sha256": "cfc5fbc759dcc599c8329dd94f9364394c7b1e875d6ff515c7337e00fb1f30cf",
+      "md5": "f1b1ac7839d2b2a1e458b5d87c7b2ca2",
+      "red_flags": [],
+      "vt_result": {
+        "status": "found",
+        "malicious": 18,
+        "suspicious": 0,
+        "harmless": 0,
+        "undetected": 46,
+        "type_description": "PDF",
+        "popular_threat_name": "trojan."
+      }
+    }
+  ],
+  "whois_analysis": [],
+  "virustotal_results": [
+    {
+      "ip": "20.97.213.223",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 94,
+      "owner": "Microsoft Corporation",
+      "country": "US",
+      "reputation": 0
+    }
+  ],
+  "abuseipdb_result": {
+    "ip": "20.97.213.223",
+    "abuse_score": 0,
+    "country": "US",
+    "isp": "Microsoft Corporation",
+    "domain": "microsoft.com",
+    "total_reports": 0,
+    "last_reported": "2023-09-12T02:37:28+00:00",
+    "is_whitelisted": false,
+    "usage_type": "Data Center/Web Hosting/Transit"
+  }
+}

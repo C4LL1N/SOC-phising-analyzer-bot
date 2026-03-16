@@ -1,0 +1,122 @@
+{
+  "report_date": "2026-03-16T14:55:02.953777",
+  "source_file": "/home/c4ll1n/Desktop/example-of-eml/sample-10.eml",
+  "risk_score": {
+    "score": 86,
+    "verdict": "PHISHING \u2014 HIGH RISK",
+    "breakdown": [
+      [
+        "Header mismatches",
+        20
+      ],
+      [
+        "Social engineering patterns (3)",
+        16
+      ],
+      [
+        "VT: 8 engines flagged http://thebandalisty.com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176",
+        50
+      ]
+    ]
+  },
+  "header_analysis": {
+    "from": "\"Microsoft account team\", _ <no-reply@access-accsecurity.com>",
+    "return_path": "bounce@thcultarfdes.co.uk",
+    "reply_to": "sotrecognizd@gmail.com",
+    "to": "phishing@pot",
+    "subject": "Microsoft account unusual signin activity",
+    "date": "Fri, 08 Sep 2023 05:47:04 +0000",
+    "message_id": "<032672b4-77ca-42f8-a036-9711e91bd1f3@DB8EUR06FT032.eop-eur06.prod.protection.outlook.com>",
+    "received_chain": [
+      {
+        "hop": 1,
+        "header": "from thcultarfdes.co.uk (89.144.44.2) by DB8EUR06FT032.mail.protection.outlook.com (10.233.253.34) with Microsoft SMTP Server id 15.20.6768.30 via Frontend Transport; Fri, 8 Sep 2023 05:47:04 +0000"
+      },
+      {
+        "hop": 2,
+        "header": "from DB8EUR06FT032.eop-eur06.prod.protection.outlook.com (2603:10a6:10:130:cafe::9b) by DB8P191CA0014.outlook.office365.com (2603:10a6:10:130::24) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6768.30 via Frontend Transport; Fri, 8 Sep 2023 05:47:04 +0000"
+      },
+      {
+        "hop": 3,
+        "header": "from DB8P191CA0014.EURP191.PROD.OUTLOOK.COM (2603:10a6:10:130::24) by SJ0PR19MB6679.namprd19.prod.outlook.com (2603:10b6:a03:477::19) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6768.30; Fri, 8 Sep 2023 05:47:04 +0000"
+      },
+      {
+        "hop": 4,
+        "header": "from SJ0PR19MB6679.namprd19.prod.outlook.com (::1) by MN0PR19MB6312.namprd19.prod.outlook.com with HTTPS; Fri, 8 Sep 2023 05:47:06 +0000"
+      }
+    ],
+    "auth": {
+      "spf": "NOT FOUND",
+      "dkim": "NOT FOUND",
+      "dmarc": "NOT FOUND"
+    },
+    "red_flags": [
+      "FROM/RETURN-PATH MISMATCH: access-accsecurity.com vs thcultarfdes.co.uk",
+      "FROM/REPLY-TO MISMATCH: access-accsecurity.com vs gmail.com"
+    ],
+    "originating_ip": null
+  },
+  "url_analysis": [
+    {
+      "url": "http://thebandalisty.com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176",
+      "domain": "thebandalisty.com",
+      "scheme": "http",
+      "red_flags": []
+    }
+  ],
+  "body_analysis": {
+    "body_length": 8930,
+    "matches": [
+      {
+        "category": "Suspicious activity claim",
+        "examples": [
+          "Unusual sign.in"
+        ]
+      },
+      {
+        "category": "Click/open directive",
+        "examples": [
+          "click here"
+        ]
+      },
+      {
+        "category": "Generic greeting (not personalized)",
+        "examples": [
+          "User",
+          "user"
+        ]
+      }
+    ],
+    "red_flags": [
+      "MODERATE social engineering indicators \u2014 3 patterns detected"
+    ]
+  },
+  "html_analysis": {
+    "has_html": true,
+    "findings": [
+      "22 zero/1px sized elements (tracking pixels?)"
+    ],
+    "red_flags": []
+  },
+  "attachment_analysis": [],
+  "whois_analysis": [
+    {
+      "domain": "thebandalisty.com",
+      "creation_date": null,
+      "age_days": null,
+      "registrar": null,
+      "red_flags": []
+    }
+  ],
+  "virustotal_results": [
+    {
+      "url": "http://thebandalisty.com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176",
+      "malicious": 8,
+      "suspicious": 0,
+      "harmless": 55,
+      "undetected": 31,
+      "reputation": 0
+    }
+  ],
+  "abuseipdb_result": null
+}
