@@ -116,15 +116,7 @@ phisingAnalyzer/
 ├── abuseipdb_checker.py     # AbuseIPDB API integration
 ├── scoring.py               # Risk score calculation (0-100)
 ├── report_export.py         # JSON + HTML report generation
-├── tests/
-│   ├── test_url_analyzer.py
-│   ├── test_body_analyzer.py
-│   ├── test_html_analyzer.py
-│   └── test_scoring.py
-├── samples_phising/         # Sample .eml files for testing
 ├── requirements.txt
-├── .env.example
-└── .gitignore
 ```
 
 ## Running Tests
