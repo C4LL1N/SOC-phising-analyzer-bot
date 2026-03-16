@@ -1,1 +1,0 @@
-# SOC-phising-analyzer-bot
